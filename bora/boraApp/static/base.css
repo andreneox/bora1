@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(to right, #ff9966, #ff5e62);
+    font-family: sans-serif;
+}
+.navbar {
+    box-shadow: 0px 1px 20px white;
+}
+
+#navbarVoltar {
+    border-radius: 20px;
+    background: none;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: white;
+}
+
+#navbarVoltar:hover {
+    background: white;
+    color: salmon;
+}
+
+#boxLogin {
+    margin: 100px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: white;
+}
+#botaoLogin {
+    border-radius: 20px;
+    background: none;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: white;
+}
+
+#botaoLogin:hover {
+    background: white;
+    color: salmon;
+}
+
+#esqueciSenha {
+    color: white;
+    margin-left: 10px;
+}
+

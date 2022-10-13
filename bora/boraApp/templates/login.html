@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{%if messages%}
+{% for m in messages%}
+<div class="alert alert-danger" role="alert">
+    {{m}}
+</div>
+{%endfor%}
+{%endif%}
+<br>
+    <form action="{% url 'login' %}" method="POST" style="margin: auto; width: 280px;"> {%csrf_token%}
+        <div class="input-group-mb-3" >
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1" >Usuario</span>
+            </div>
+         <input type="text" class="form-control" placeholder="" aria-label="Usuario" aria-describedby="basic-addon1" name="usuario">
+        </div><br>
+
+        <div class="input-group-mb-3" >
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1" >Senha</span>
+            </div>
+            <input type="password" class="form-control" placeholder="" aria-label="Usuario" aria-describedby="basic-addon1" name="senha">
+        </div><br>
+    <center>
+        <button class="btn btn-sucess" type="submit">Login</button>
+        <a class="btn btn-secondary" href="{%url 'home' %}">Pagina Inicial</a>
+    </center><br>
+    <center>
+        <a type="button" class="btn btn-link" href="{%url 'cadastro' %}">Ainda nao tem cadastro, registre se!</a>
+    </center><br>
+    <center>
+        <a type="button" class="btn btn-link" href="">Esqueci a senha</a>
+    </center>
+    <br><br>
+
+    </form>
+    
+
+
+{% endblock %}
